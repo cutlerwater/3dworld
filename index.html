@@ -6,18 +6,17 @@
   </head>
   <body>
     <a href="https://cutlerwater-profile.netlify.app/">Go Home!</a>
-    <a href="./eclipse/index.html">Red Eclipse</a>
-    <a href="./corona/index.html">Corona</a>
-    <a href="./peter/index.html">Peter</a>\
-    <a href="./marriott/index.html">Marriott</a>
-    <a href="./Vasa/index.html">Vasa</a>
-    <a href="./Dallas/index.html">Dallas</a>
-    <a href="./battery/index.html">Battery World</a>
-    <a href="./barren/index.html">Barren</a>
-    <a href="./arid/index.html">Arid</a>
-    <a href="./trouble/index.html">Trouble</a>
-    <a href="./zeus/index.html">Zeus</a>    
-    <a href="./blizzard/index.html">Blizzard</a>
+    <a href="index.html">Red Eclipse</a>
+    <a href="space/corona.html">Corona</a>
+    <a href="space/asteroids.html">Asteroids</a>
+    <a href="space/planets.html">Planets</a>
+    <a href="space/nebulae.html">Nebulae</a>
+    
+        
+    <a href="./winter/icylake.html">Winter</a>
+    <a href="./night/swedishcastle.html">Night</a>
+    <a href="./Terrain/intheclouds.html">Terrain</a>
+    <a href="./xonitic/calm.html">Nature</a>
     <p>Just move the mouse around and enjoy</p>
     <script src="three.min.js"></script>
     <script src="OrbitControls.js"></script>
@@ -39,12 +38,12 @@
         controls.maxDistance = 1500;
         
         let materialArray = [];
-        let texture_ft = new THREE.TextureLoader().load( 'eclipse/redeclipse_ft.png');
-        let texture_bk = new THREE.TextureLoader().load( 'eclipse/redeclipse_bk.png');
-        let texture_up = new THREE.TextureLoader().load( 'eclipse/redeclipse_up.png');
-        let texture_dn = new THREE.TextureLoader().load( 'eclipse/redeclipse_dn.png');
-        let texture_rt = new THREE.TextureLoader().load( 'eclipse/redeclipse_rt.png');
-        let texture_lf = new THREE.TextureLoader().load( 'eclipse/redeclipse_lf.png');
+        let texture_ft = new THREE.TextureLoader().load( 'space/eclipse/redeclipse_ft.png');
+        let texture_bk = new THREE.TextureLoader().load( 'space/eclipse/redeclipse_bk.png');
+        let texture_up = new THREE.TextureLoader().load( 'space/eclipse/redeclipse_up.png');
+        let texture_dn = new THREE.TextureLoader().load( 'space/eclipse/redeclipse_dn.png');
+        let texture_rt = new THREE.TextureLoader().load( 'space/eclipse/redeclipse_rt.png');
+        let texture_lf = new THREE.TextureLoader().load( 'space/eclipse/redeclipse_lf.png');
           
         materialArray.push(new THREE.MeshBasicMaterial( { map: texture_ft }));
         materialArray.push(new THREE.MeshBasicMaterial( { map: texture_bk }));

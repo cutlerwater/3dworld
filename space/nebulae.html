@@ -6,9 +6,18 @@
   </head>
   <body>
     <a href="https://cutlerwater-profile.netlify.app/">Go Home!</a>
-    <a href="peter.html">Indoors</a>
-    <a href="marriott.html">Marriott</a>
-    <a href="vasa.html">Vasa</a>
+    <a href="../index.html">Red Eclipse</a>
+    <a href="corona.html">Corona</a>
+    <a href="asteroids.html">Asteroids</a>
+    <a href="planets.html">Planets</a>
+    <a href="nebulae.html">Nebulae</a>         
+    
+    <a href="../indoors/peter.html">Indoors</a>
+    <a href="../winter/icylake.html">Winter</a>
+    <a href="../night/swedishcastle.html">Night</a>
+    <a href="../xonitic/calm.html">Nature</a>
+    <a href="../Terrain/intheclouds.html">Terrain</a>
+
     <p>Just move the mouse around and enjoy</p>
     <script src="three.min.js"></script>
     <script src="OrbitControls.js"></script>
@@ -30,12 +39,12 @@
         controls.maxDistance = 1500;
         
         let materialArray = [];
-        let texture_ft = new THREE.TextureLoader().load( 'marriott/posx.jpg');
-        let texture_bk = new THREE.TextureLoader().load( 'marriott/negx.jpg');
-        let texture_up = new THREE.TextureLoader().load( 'marriott/posy.jpg');
-        let texture_dn = new THREE.TextureLoader().load( 'marriott/negy.jpg');
-        let texture_rt = new THREE.TextureLoader().load( 'marriott/posz.jpg');
-        let texture_lf = new THREE.TextureLoader().load( 'marriott/negz.jpg');
+        let texture_ft = new THREE.TextureLoader().load( 'nebulae/nebulae_ft.jpg');
+        let texture_bk = new THREE.TextureLoader().load( 'nebulae/nebulae_bk.jpg');
+        let texture_up = new THREE.TextureLoader().load( 'nebulae/nebulae_up.jpg');
+        let texture_dn = new THREE.TextureLoader().load( 'nebulae/nebulae_dn.jpg');
+        let texture_rt = new THREE.TextureLoader().load( 'nebulae/nebulae_rt.jpg');
+        let texture_lf = new THREE.TextureLoader().load( 'nebulae/nebulae_lf.jpg');
           
         materialArray.push(new THREE.MeshBasicMaterial( { map: texture_ft }));
         materialArray.push(new THREE.MeshBasicMaterial( { map: texture_bk }));
