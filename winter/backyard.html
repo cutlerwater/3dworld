@@ -6,18 +6,24 @@
   </head>
   <body>
     <a href="https://cutlerwater-profile.netlify.app/">Go Home!</a>
-    <a href="./index.html">Red Eclipse</a>
-    <a href="./corona.html">Corona</a>
-    <a href="./peter.html">Peter</a>
-    <a href="./marriott/index.html">Marriott</a>
-    <a href="./Vasa/index.html">Vasa</a>
-    <a href="./Dallas/index.html">Dallas</a>
-    <a href="./battery.html">Battery World</a>
-    <a href="./barren.html">Barren</a>
-    <a href="./arid.html">Arid</a>
-    <a href="./trouble.html">Trouble</a>
-    <a href="./zeus.html">Zeus</a>    
-    <a href="./blizzard.html">Blizzard</a>
+    <a href="icylake.html">Icy Lake</a>
+    <a href="backyard.html">Backyard</a>
+    <a href="creek.html">Creek</a>
+    <a href="footballfield.html">Football Field</a>
+    <a href="forest.html">Forest</a>
+    <a href="horns.html">Horns</a>
+    <a href="house.html">House</a>
+    <a href="iceriver.html">Icy River</a>
+    <a href="park.html">Park</a>
+    <a href="pond.html">Pond</a>
+    <a href="vindelalven.html">Vindelalven</a>
+    <a href="tanto.html">Tantolunden</a>
+
+    <a href="./index.html">Space</a>
+    <a href="./winter/icylake.html">Winter</a>
+    <a href="./night/swedishcastle.html">Night</a>
+    <a href="./Terrain/intheclouds.html">Terrain</a>
+    <a href="./xonitic/calm.html">Nature</a>
     <p>Just move the mouse around and enjoy</p>
     <script src="three.min.js"></script>
     <script src="OrbitControls.js"></script>
@@ -39,12 +45,12 @@
         controls.maxDistance = 1500;
         
         let materialArray = [];
-        let texture_ft = new THREE.TextureLoader().load( 'corona/corona_ft.png');
-        let texture_bk = new THREE.TextureLoader().load( 'corona/corona_bk.png');
-        let texture_up = new THREE.TextureLoader().load( 'corona/corona_up.png');
-        let texture_dn = new THREE.TextureLoader().load( 'corona/corona_dn.png');
-        let texture_rt = new THREE.TextureLoader().load( 'corona/corona_rt.png');
-        let texture_lf = new THREE.TextureLoader().load( 'corona/corona_lf.png');
+        let texture_ft = new THREE.TextureLoader().load( 'Backyard/posx.jpg');
+        let texture_bk = new THREE.TextureLoader().load( 'Backyard/negx.jpg');
+        let texture_up = new THREE.TextureLoader().load( 'Backyard/posy.jpg');
+        let texture_dn = new THREE.TextureLoader().load( 'Backyard/negy.jpg');
+        let texture_rt = new THREE.TextureLoader().load( 'Backyard/posz.jpg');
+        let texture_lf = new THREE.TextureLoader().load( 'Backyard/negz.jpg');
           
         materialArray.push(new THREE.MeshBasicMaterial( { map: texture_ft }));
         materialArray.push(new THREE.MeshBasicMaterial( { map: texture_bk }));

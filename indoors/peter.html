@@ -5,19 +5,16 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
-    <a href="https://cutlerwater-profile.netlify.app/">Go Home!</a>
-    <a href="./index.html">Red Eclipse</a>
-    <a href="./corona.html">Corona</a>
-    <a href="./peter.html">Peter</a>
-    <a href="./marriott/index.html">Marriott</a>
-    <a href="./Vasa/index.html">Vasa</a>
-    <a href="./Dallas/index.html">Dallas</a>
-    <a href="./battery.html">Battery World</a>
-    <a href="./barren.html">Barren</a>
-    <a href="./arid.html">Arid</a>
-    <a href="./trouble.html">Trouble</a>
-    <a href="./zeus.html">Zeus</a>    
-    <a href="./blizzard.html">Blizzard</a>
+    <a href="https://cutlerwater-profile.netlify.app/">Go Home!</a>    
+    <a href="peter.html">St. Peter's Basilica</a>
+    <a href="marriott.html">Marriott room</a>
+    <a href="dallas.html">Dallas room</a>
+    <a href="vasa.html">Museum</a>
+    <a href="./index.html">Space</a>
+    <a href="./winter/icylake.html">Winter</a>
+    <a href="./night/swedishcastle.html">Night</a>
+    <a href="./Terrain/intheclouds.html">Terrain</a>
+    <a href="./xonitic/calm.html">Nature</a>
     <p>Just move the mouse around and enjoy</p>
     <script src="three.min.js"></script>
     <script src="OrbitControls.js"></script>
@@ -39,12 +36,12 @@
         controls.maxDistance = 1500;
         
         let materialArray = [];
-        let texture_ft = new THREE.TextureLoader().load( 'corona/corona_ft.png');
-        let texture_bk = new THREE.TextureLoader().load( 'corona/corona_bk.png');
-        let texture_up = new THREE.TextureLoader().load( 'corona/corona_up.png');
-        let texture_dn = new THREE.TextureLoader().load( 'corona/corona_dn.png');
-        let texture_rt = new THREE.TextureLoader().load( 'corona/corona_rt.png');
-        let texture_lf = new THREE.TextureLoader().load( 'corona/corona_lf.png');
+        let texture_ft = new THREE.TextureLoader().load( 'peter/posx.jpg');
+        let texture_bk = new THREE.TextureLoader().load( 'peter/negx.jpg');
+        let texture_up = new THREE.TextureLoader().load( 'peter/posy.jpg');
+        let texture_dn = new THREE.TextureLoader().load( 'peter/negy.jpg');
+        let texture_rt = new THREE.TextureLoader().load( 'peter/posz.jpg');
+        let texture_lf = new THREE.TextureLoader().load( 'peter/negz.jpg');
           
         materialArray.push(new THREE.MeshBasicMaterial( { map: texture_ft }));
         materialArray.push(new THREE.MeshBasicMaterial( { map: texture_bk }));
